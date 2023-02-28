@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2e3e64"
+    android:padding="40dp"
+    tools:context=".MainActivity">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/city_name_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="cityname"
+                android:textColor="#e6ebf1"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/l_layout_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/city_name_id"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/region_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="region ,"
+                    android:textColor="#BCE6EBF1" />
+
+                <TextView
+                    android:id="@+id/country_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="country"
+                    android:textColor="#BCE6EBF1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/localtime_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/l_layout_id"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Monday 7.00 AM"
+                android:textColor="#BCE6EBF1"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/imag_id"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/temp_c_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imag_id"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:text="55"
+                android:textColor="#feffff"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textW_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/temp_c_id"
+                android:layout_centerHorizontal="true"
+                android:text="Sunny"
+                android:textColor="#BCE6EBF1"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tzidid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textW_id"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="Asia/kolkata"
+                android:textColor="#BCE6EBF1"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/lastupdate_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Last update"
+                android:textColor="#BCE6EBF1" />
+
+        </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>
